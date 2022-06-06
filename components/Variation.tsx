@@ -11,6 +11,7 @@ import {
     Button
   } from 'react-native';
   import { TouchableOpacity } from 'react-native-gesture-handler';
+  import { Colors } from 'react-native/Libraries/NewAppScreen';
   import { useSelector, useDispatch } from 'react-redux';
   import SwipeButton from 'rn-swipe-button';
 
@@ -48,15 +49,15 @@ const Variation = ({navigation}) => {
           </View>
 
           <View style={{margin:5}}>
-          <SwipeButton
+          <SwipeButton                    
           disabled={false}
           //disable the button by doing true (Optional)
           swipeSuccessThreshold={70}
-          height={45}
+          height={40}
           //height of the button (Optional)
-          width={330}
+          width={315}
           //width of the button (Optional)
-          title="Swipe to Submit"
+          title="Slide me to continue"
           //Text inside the button (Optional)
           //thumbIconImageSource={thumbIcon}
           //You can also set your own icon (Optional)
@@ -70,8 +71,7 @@ const Variation = ({navigation}) => {
           thumbIconBorderColor="#ed9aff" //(Optional)
           railBackgroundColor="#bbeaa6" //(Optional)
           railBorderColor="#bbeaff" //(Optional)
-        />
-            
+        />            
           </View>          
         </View>
       </View> 
